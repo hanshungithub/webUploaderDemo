@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.multipart.maxSize" value="999999999" />
+	<package name="web-package" namespace="/contents" extends="struts-default">
+        <action name="ajaxAttachUpload" class="cn.hassan.action.WebuploaderAction" method="ajaxAttachUpload">
+            <result name="success">/success.html</result>
+        </action>
+        <action name="ajaxAttachUpload2" class="cn.hassan.action.WebuploaderAction" method="ajaxAttachUpload2">
+            <result name="success">/success.html</result>
+        </action>
+	</package>
+</struts>
